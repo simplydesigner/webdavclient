@@ -4,6 +4,12 @@ python:
   - "3.3"
   - "2.7"
   - "2.6"
+env:
+  - webdav_server="yandex"
+  - webdav_server="dropbox"
+  - webdav_server="google"
+  - webdav_server="box"
+  - webdav_server="4shared"
 before_install:
   - sudo apt-get update -qq
   - sudo apt-get install libxml2-dev libxslt-dev libcurl4-openssl-dev python-pycurl python-dev
